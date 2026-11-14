@@ -1,82 +1,109 @@
 <div align="center">
 
-# NumberForge
+# ⚡ NumberForge
 
-**A beginner-friendly Python CLI that finds the largest number in a comma-separated list.**
+### Find the maximum. Understand the logic. Keep it simple.
 
-![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)
-![Project](https://img.shields.io/badge/Project-CLI-222222)
-![Dependencies](https://img.shields.io/badge/Dependencies-None-brightgreen)
+A lightweight command-line Python project that finds the largest value in a comma-separated list of integers.
 
-[Source Code](largest_number.py) · [Issues](https://github.com/ansh44233/NumberForge/issues)
+[![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![License](https://img.shields.io/badge/License-Not%20specified-lightgrey?style=for-the-badge)](https://github.com/ansh44233/NumberForge)
+[![Dependencies](https://img.shields.io/badge/Dependencies-None-2ea44f?style=for-the-badge)](https://github.com/ansh44233/NumberForge)
+
+[**View Source**](largest_number.py) · [Report an Issue](https://github.com/ansh44233/NumberForge/issues) · [Star History](https://star-history.com/#ansh44233/NumberForge&Date)
 
 </div>
 
 ---
 
-## Overview
+## 📌 About
 
-NumberForge reads a comma-separated sequence of integers, compares the values, and prints the largest one. It is a compact example of core Python programming and a simple linear-time algorithm.
+**NumberForge** is a small Python CLI program built around one fundamental programming task: finding the largest number in a collection.
 
-## What It Demonstrates
+Provide a comma-separated list of integers, and the program compares the values to determine and print the maximum.
 
-- Reading input from the command line
-- Converting strings into integers
-- Working with Python lists
-- Iteration, comparisons, and conditional statements
-- Tracking a running maximum
+The project keeps the implementation intentionally simple, making it useful for understanding loops, conditions, lists, type conversion, and basic algorithmic thinking.
 
-## How It Works
+## ✨ What it demonstrates
 
-1. Enter integers separated by commas.
-2. The program converts the input into a list of integers.
-3. It initializes the current maximum using the first element.
-4. It checks each value and updates the maximum when a larger value is found.
-5. It prints the result.
+- **Command-line input** — accepting values from the terminal.
+- **Type conversion** — converting input strings into integers.
+- **Python lists** — storing and iterating over a collection of values.
+- **Conditional logic** — comparing values with an `if` statement.
+- **Maximum tracking** — maintaining the largest value found so far.
+- **Algorithmic fundamentals** — solving a simple problem with a linear scan.
 
-## Run Locally
+## 🚀 Quick start
 
-**Requirements:** Python 3. No third-party packages are required.
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/ansh44233/NumberForge.git
 cd NumberForge
+```
+
+### 2. Run the program
+
+```bash
 python largest_number.py
 ```
 
-Use `python3` instead of `python` on systems where that is the Python 3 command.
+> **Requirement:** Python 3. No third-party packages are needed.
 
-## Example
+If your system uses `python3` as the Python command, run `python3 largest_number.py` instead.
+
+## 💻 Example
+
+Enter a comma-separated list of integers when prompted:
 
 ```text
-Input:
-12,45,7,89,23
+12, 45, 7, 89, 23
 
-Output:
 89
 ```
 
-## Complexity
+The program checks the values and prints the largest one.
 
-For `n` input numbers:
+## 🧠 How the logic works
 
-| Measure | Complexity |
-|---|---:|
-| Time | O(n) |
-| Auxiliary space | O(1), excluding the input list |
+1. Read the comma-separated input.
+2. Split the input into individual values and convert them to integers.
+3. Treat the first value as the current largest value.
+4. Visit each value and compare it with the current maximum.
+5. Update the maximum whenever a larger value is found.
+6. Print the final result.
 
-The program performs one traversal of the list to find the maximum.
+## ⏱️ Complexity
 
-## Project Structure
+For an input containing **n** integers:
+
+| Metric | Complexity | Explanation |
+|---|---:|---|
+| Time | **O(n)** | Each value is checked once. |
+| Extra working space | **O(1)** | Only a fixed number of tracking variables are used, excluding the input list. |
+
+## 🗂️ Repository structure
 
 ```text
 NumberForge/
-├── largest_number.py
-├── README.md
-└── .gitignore
+├── largest_number.py   # Main Python program
+├── README.md           # Project documentation
+└── .gitignore          # Files excluded from Git
 ```
 
-## Star History
+## 🛣️ Possible next steps
+
+Potential improvements for a future version:
+
+- Handle empty input and invalid values gracefully.
+- Support decimal numbers.
+- Add automated tests for different input cases.
+- Add clearer prompts and error messages.
+- Package the logic into a reusable function.
+
+These are ideas for future development; they are not features of the current script.
+
+## 🌟 Star history
 
 [![Star History Chart](https://api.star-history.com/svg?repos=ansh44233/NumberForge&type=Date)](https://star-history.com/#ansh44233/NumberForge&Date)
 
@@ -84,8 +111,8 @@ NumberForge/
 
 <div align="center">
 
-**Built with Python · Made for learning**
+**A small project built to practise the fundamentals of Python.**
 
-If you find this project useful, consider giving it a ⭐.
+If this repository helped you, consider leaving a ⭐.
 
 </div>
